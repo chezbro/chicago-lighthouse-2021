@@ -1,0 +1,28 @@
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="container">
+
+          <div class="masthead clearfix">
+            <div class="container inner">
+              <h3 class="masthead-brand">The Lighthouse Charity</h3>
+              <nav>
+                <ul class="nav masthead-nav">              
+                  <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <p> <%= link_to "New User", new_user_registration_path, method: :get %> </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>

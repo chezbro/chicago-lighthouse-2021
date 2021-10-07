@@ -1,0 +1,55 @@
+
+<div class="splash-site-wrapper">
+
+  <div class="">
+    <header class="clearfix">
+      <div class="container-fluid green-bg inner">
+        <a href="/"><img class="logo-img" src="http://ericchesbrough.com/media/new-logo.jpg" alt=""></a>
+        <nav>
+          <ul class="nav masthead-nav">
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete if current_user.present? %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+
+          <div class="inner cover">
+            <h2>Add New User</h2>
+
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+              <%= render "devise/shared/error_messages", resource: resource %>
+
+              <div class="field">
+                <%= f.label :email %><br />
+                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+              </div>
+
+              <div class="field">
+                <%= f.label :password %>
+                <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %> characters minimum)</em>
+                <% end %><br />
+                <%= f.password_field :password, autocomplete: "new-password" %>
+              </div>
+
+              <div class="field">
+                <%= f.label :password_confirmation %><br />
+                <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+              </div>
+              <div><br></div>
+
+              <div class="actions">
+                <%= f.submit "Sign up" %>
+              </div>
+            <% end %>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
