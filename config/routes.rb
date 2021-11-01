@@ -11,7 +11,8 @@ Rails.application.routes.draw do
 
   devise_scope :user do
     unauthenticated do
-      root :to => 'devise/sessions#new'
+      # root :to => 'devise/sessions#new'
+      root :to => 'landings#splash'
     end
   end
 
