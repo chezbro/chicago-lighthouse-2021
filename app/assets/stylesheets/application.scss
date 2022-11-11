@@ -67,6 +67,9 @@ body {
   background: #4C5A5B!important;
   padding: 5px;  
 }
+.video-wrapper{
+  width:80%;
+}
 
 .btn-success{
 
@@ -238,6 +241,9 @@ and (-webkit-device-pixel-ratio : 3) {
     top: 3vh;
     position: relative;
     width: 100%;
+  }
+  .video-wrapper{
+    width:100%;
   }
 
 }
