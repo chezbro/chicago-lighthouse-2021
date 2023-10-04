@@ -18,6 +18,6 @@ test:
 # ENV["DATABASE_URL"]
 # Heroku sets pretty good defaults as well so YAGNI.
 
-production:
-  <<: *default
-  database: lighthouse_production
+# production:
+#   <<: *default
+#   database: lighthouse_production
