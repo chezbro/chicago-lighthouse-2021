@@ -9,8 +9,9 @@ ruby "3.2.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 7.0.8"
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+gem 'pg'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -37,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bootstrap', '~> 5.0.0.alpha1'
 gem 'jquery-rails'
-gem 'pg', group: :production
+
 gem 'mini_racer', platforms: :ruby
 
 
