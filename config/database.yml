@@ -19,7 +19,5 @@ test:
 # Heroku sets pretty good defaults as well so YAGNI.
 
 production:
-      adapter: postgresql
-      database: 'lighthouse_production'
-      pool: 5
-      timeout: 5000
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
