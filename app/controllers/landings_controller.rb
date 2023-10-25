@@ -1,6 +1,22 @@
 class LandingsController < ApplicationController
   before_action :set_landing, only: [:show, :edit, :update, :destroy]
 
+
+
+  # Add these methods:
+  helper_method :resource, :resource_name, :devise_mapping
+
+  def resource
+    @resource ||= User.new
+  end
+
+  def resource_name
+    :user
+  end
+
+  def devise_mapping
+    @devise_mapping ||= Devise.mappings[:user]
+  end  
   # before_action :authenticate_user!, only: [:video]
   
   # GET /landings

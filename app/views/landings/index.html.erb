@@ -18,8 +18,33 @@
             <!-- <%= button_to "Watch Now", video_path, method: :get %> -->
             The virtual tour will be available from Friday, November 3rd starting at 9am central time through Sunday, November 5th at 9pm central time.
           </p>
+          <!-- New login links on landing page -->
+          <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.label :email, "Email Address" %><br />
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "current-password" %>
+          </div>
+
+          <% if devise_mapping.rememberable? %>
+            <div class="field">
+              <span><br></span>
+            </div>
+          <% end %>
+
+          <div class="actions">
+            <%= f.submit "Login", class: "btn btn-success btn-lg" %>
+          </div>
+        <% end %>
+                  
         </div>
       </div>
+
+     
 
     </div>
 
