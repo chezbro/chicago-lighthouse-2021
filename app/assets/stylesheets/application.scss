@@ -43,7 +43,7 @@ a:hover {
 // added
 
 .green-bg{
-  background: #4C5A5B;
+  background: #fff;
 }
 .black-text{
   color:#000;
@@ -59,7 +59,7 @@ body {
 }
 
 .inner-cover{
-  top:8vh;
+  top:20vh;
   position: relative;
   width: 50%;
   position: relative;
@@ -93,7 +93,7 @@ body {
   display: table;
   width: 100%;
   height: 100%;
-  background:url("https://p0.f0.n0.cdn.getcloudapp.com/items/Jru80WrP/79b6ee4c-56eb-41a3-bb73-9e6dd03e0edf.jpg?source=viewer&v=e87c42cc747fe10a6780ecbad31702a8");
+  background:url("https://p22.f4.n0.cdn.getcloudapp.com/items/2NuWvQON/504a08a9-51db-4f41-a3e0-12a675cbdfbf.jpg?source=viewer&v=dc7d86e1930ce51b5262aefde84c0f7b");
   background-size:cover;
   background-repeat: no-repeat;
 }
@@ -111,10 +111,10 @@ body {
   // padding: 30px;
 }
 
-
 /*
  * Header
  */
+
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -135,6 +135,7 @@ body {
   color: #fff; /* IE8 proofing */
   color: #000;
   border-bottom: 2px solid transparent;
+  
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
@@ -238,7 +239,7 @@ and (-webkit-device-pixel-ratio : 3) {
     width:100%;
   }
   .inner-cover{
-    top: 3vh;
+    top: 12vh;
     position: relative;
     width: 100%;
   }

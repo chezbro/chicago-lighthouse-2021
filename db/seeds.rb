@@ -13,8 +13,8 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 csv.each do |row|
   u = User.new
   u.email = row['email']
-  u.password = 'Lighthouse2022'
-  u.password_confirmation = 'Lighthouse2022'
+  u.password = 'Lighthouse2023'
+  u.password_confirmation = 'Lighthouse2023'
   u.save!
 end
 
