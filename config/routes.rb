@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'video', to: 'landings#video'
   get 'new_user', to: 'landings#new_user'
+  
 
   devise_scope :user do
     unauthenticated do
