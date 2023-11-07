@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     end
 
     authenticated :user do
-      root to: 'landings#video', as: :authenticated_root
+      root to: 'landings#index', as: :authenticated_root
     end
   end
 
